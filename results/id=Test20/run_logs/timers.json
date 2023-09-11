@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1694382568",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\markk\\Documents\\UnityProjects\\Reinforcement-Learning\\sample-env\\Scripts\\mlagents-learn config/Score.yaml --run id=Test20 --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.0+cu118",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1694382576"
+    },
+    "total": 8.508086099995126,
+    "count": 1,
+    "self": 0.013122100004693493,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09859469999355497,
+            "count": 1,
+            "self": 0.09859469999355497
+        },
+        "TrainerController.start_learning": {
+            "total": 8.396369299996877,
+            "count": 1,
+            "self": 0.00011449999874457717,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.28719060000003,
+                    "count": 1,
+                    "self": 8.28719060000003
+                },
+                "trainer_threads": {
+                    "total": 8.999995770864189e-07,
+                    "count": 1,
+                    "self": 8.999995770864189e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.1090632999985246,
+                    "count": 1,
+                    "self": 0.001418500003637746,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.10764479999488685,
+                            "count": 1,
+                            "self": 0.10764479999488685
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

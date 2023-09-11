@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1694383244",
+        "python_version": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\markk\\Documents\\UnityProjects\\Reinforcement-Learning\\sample-env\\Scripts\\mlagents-learn config/Score.yaml --run id=Test22 --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.0+cu118",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1694383252"
+    },
+    "total": 8.286641899998358,
+    "count": 1,
+    "self": 0.008452800000668503,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09956899999815505,
+            "count": 1,
+            "self": 0.09956899999815505
+        },
+        "TrainerController.start_learning": {
+            "total": 8.178620099999534,
+            "count": 1,
+            "self": 0.0005104999945615418,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.17809760000091,
+                    "count": 1,
+                    "self": 8.17809760000091
+                },
+                "trainer_threads": {
+                    "total": 8.999995770864189e-07,
+                    "count": 1,
+                    "self": 8.999995770864189e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 1.1100004485342652e-05,
+                    "count": 1,
+                    "self": 1.1100004485342652e-05
+                }
+            }
+        }
+    }
+}

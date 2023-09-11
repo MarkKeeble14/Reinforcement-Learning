@@ -1,0 +1,29 @@
+{
+    "Live": {
+        "checkpoints": [
+            {
+                "steps": 3681,
+                "file_path": "results\\id=Test4\\Live\\Live-3681.onnx",
+                "reward": -0.5,
+                "creation_time": 1694328349.0004132,
+                "auxillary_file_paths": [
+                    "results\\id=Test4\\Live\\Live-3681.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3681,
+            "file_path": "results\\id=Test4\\Live.onnx",
+            "reward": -0.5,
+            "creation_time": 1694328349.0004132,
+            "auxillary_file_paths": [
+                "results\\id=Test4\\Live\\Live-3681.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cu118"
+    }
+}

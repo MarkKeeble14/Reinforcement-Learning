@@ -1,0 +1,1568 @@
+Microsoft Windows [Version 10.0.19045.3324]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\markk>cd Documents
+
+C:\Users\markk\Documents>cd UnityProjects
+
+C:\Users\markk\Documents\UnityProjects>python
+Python 3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+C:\Users\markk\Documents\UnityProjects>venv -m venv sample-env
+'venv' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\markk\Documents\UnityProjects>python -m venv sample-env
+
+C:\Users\markk\Documents\UnityProjects>cd Reinforcement-Learning
+
+C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>python -m venv sample-env
+
+C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>.\sample-env\Scripts\Activate.ps1
+
+C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>.\sample-env\Scripts\Activate
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (22.2.2)
+Collecting pip
+  Downloading pip-23.2.1-py3-none-any.whl (2.1 MB)
+     ---------------------------------------- 2.1/2.1 MB 8.8 MB/s eta 0:00:00
+ERROR: To modify pip, please run the following command:
+C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\python.exe -m pip install --upgrade pip
+
+[notice] A new release of pip available: 22.2.2 -> 23.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (22.2.2)
+Collecting pip
+  Using cached pip-23.2.1-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.2
+    Uninstalling pip-22.2.2:
+      Successfully uninstalled pip-22.2.2
+Successfully installed pip-23.2.1
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip3 install torch==2.0.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+Collecting torch==2.0.0+cu118
+  Downloading https://download.pytorch.org/whl/cu118/torch-2.0.0%2Bcu118-cp310-cp310-win_amd64.whl (2611.3 MB)
+     ---------------------------------------- 2.6/2.6 GB ? eta 0:00:00
+Collecting filelock (from torch==2.0.0+cu118)
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/52/90/45223db4e1df30ff14e8aebf9a1bf0222da2e7b49e53692c968f36817812/filelock-3.12.3-py3-none-any.whl.metadata
+  Using cached filelock-3.12.3-py3-none-any.whl.metadata (2.7 kB)
+Collecting typing-extensions (from torch==2.0.0+cu118)
+  Obtaining dependency information for typing-extensions from https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.7.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting sympy (from torch==2.0.0+cu118)
+  Using cached sympy-1.12-py3-none-any.whl (5.7 MB)
+Collecting networkx (from torch==2.0.0+cu118)
+  Using cached networkx-3.1-py3-none-any.whl (2.1 MB)
+Collecting jinja2 (from torch==2.0.0+cu118)
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.0.0+cu118)
+  Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/84/a8/c4aebb8a14a1d39d5135eb8233a0b95831cdc42c4088358449c3ed657044/MarkupSafe-2.1.3-cp310-cp310-win_amd64.whl.metadata
+  Downloading MarkupSafe-2.1.3-cp310-cp310-win_amd64.whl.metadata (3.1 kB)
+Collecting mpmath>=0.19 (from sympy->torch==2.0.0+cu118)
+  Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached filelock-3.12.3-py3-none-any.whl (11 kB)
+Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Downloading MarkupSafe-2.1.3-cp310-cp310-win_amd64.whl (17 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, networkx, MarkupSafe, jinja2, filelock, torch
+Successfully installed MarkupSafe-2.1.3 filelock-3.12.3 jinja2-3.1.2 mpmath-1.3.0 networkx-3.1 sympy-1.12 torch-2.0.0+cu118 typing-extensions-4.7.1
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip3 uninstall numpy
+WARNING: Skipping numpy as it is not installed.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip3 install numpy==1.23.5
+Collecting numpy==1.23.5
+  Downloading numpy-1.23.5-cp310-cp310-win_amd64.whl (14.6 MB)
+     ---------------------------------------- 14.6/14.6 MB 3.4 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.23.5
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip uninstall protobuf
+WARNING: Skipping protobuf as it is not installed.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip install protobuf==3.20.3
+Collecting protobuf==3.20.3
+  Downloading protobuf-3.20.3-cp310-cp310-win_amd64.whl (904 kB)
+     ---------------------------------------- 904.0/904.0 kB 4.8 MB/s eta 0:00:00
+Installing collected packages: protobuf
+Successfully installed protobuf-3.20.3
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>pip3 install onnx==1.13.1
+Collecting onnx==1.13.1
+  Downloading onnx-1.13.1-cp310-cp310-win_amd64.whl (12.2 MB)
+     ---------------------------------------- 12.2/12.2 MB 7.7 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.16.6 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from onnx==1.13.1) (1.23.5)
+Requirement already satisfied: protobuf<4,>=3.20.2 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from onnx==1.13.1) (3.20.3)
+Requirement already satisfied: typing-extensions>=3.6.2.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from onnx==1.13.1) (4.7.1)
+Installing collected packages: onnx
+Successfully installed onnx-1.13.1
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>cd ..
+
+(sample-env) C:\Users\markk\Documents\UnityProjects>cd ..
+
+(sample-env) C:\Users\markk\Documents>cd ml-agents-release_20
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20>dir
+ Volume in drive C is OS
+ Volume Serial Number is 7E5B-33F2
+
+ Directory of C:\Users\markk\Documents\ml-agents-release_20
+
+2023-09-09  06:58 PM    <DIR>          .
+2023-09-09  06:58 PM    <DIR>          ..
+2023-09-09  06:58 PM    <DIR>          ml-agents-release_20
+               0 File(s)              0 bytes
+               3 Dir(s)  20,640,583,680 bytes free
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20>cd ml-agents-release_20
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20>dir
+ Volume in drive C is OS
+ Volume Serial Number is 7E5B-33F2
+
+ Directory of C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20
+
+2023-09-09  06:58 PM    <DIR>          .
+2023-09-09  06:58 PM    <DIR>          ..
+2022-11-28  07:58 AM             1,980 .editorconfig
+2022-11-28  07:58 AM               133 .gitattributes
+2023-09-09  06:58 PM    <DIR>          .github
+2022-11-28  07:58 AM             1,215 .gitignore
+2022-11-28  07:58 AM                 0 .gitmodules
+2022-11-28  07:58 AM             4,317 .pre-commit-config.yaml
+2022-11-28  07:58 AM               246 .pre-commit-search-and-replace.yaml
+2023-09-09  06:58 PM    <DIR>          .yamato
+2022-11-28  07:58 AM             3,191 CODE_OF_CONDUCT.md
+2023-09-09  06:58 PM    <DIR>          colab
+2022-11-28  07:58 AM                19 colab_requirements.txt
+2023-09-09  06:58 PM    <DIR>          com.unity.ml-agents
+2023-09-09  06:58 PM    <DIR>          com.unity.ml-agents.extensions
+2023-09-09  06:58 PM    <DIR>          config
+2022-11-28  07:58 AM             2,918 conftest.py
+2023-09-09  06:58 PM    <DIR>          DevProject
+2022-11-28  07:58 AM             1,271 Dockerfile
+2023-09-09  06:58 PM    <DIR>          docs
+2022-11-28  07:58 AM            11,324 LICENSE.md
+2023-09-09  06:58 PM    <DIR>          localized_docs
+2022-11-28  07:58 AM               530 markdown-link-check.fast.json
+2022-11-28  07:58 AM               887 markdown-link-check.full.json
+2022-11-28  07:58 AM             1,404 mkdocs.yml
+2023-09-09  06:58 PM    <DIR>          ml-agents
+2023-09-09  06:58 PM    <DIR>          ml-agents-envs
+2023-09-09  06:58 PM    <DIR>          ml-agents-plugin-examples
+2023-09-09  06:58 PM    <DIR>          ml-agents-trainer-plugin
+2023-09-09  06:58 PM    <DIR>          Project
+2023-09-09  06:58 PM    <DIR>          protobuf-definitions
+2022-11-28  07:58 AM                90 pytest.ini
+2022-11-28  07:58 AM             1,028 setup.cfg
+2022-11-28  07:58 AM               370 SURVEY.md
+2022-11-28  07:58 AM               180 test_constraints_max_version.txt
+2022-11-28  07:58 AM               102 test_constraints_mid_version.txt
+2022-11-28  07:58 AM                90 test_constraints_min_version.txt
+2022-11-28  07:58 AM               126 test_requirements.txt
+2023-09-09  06:58 PM    <DIR>          unity-volume
+2023-09-09  06:58 PM    <DIR>          utils
+              21 File(s)         31,421 bytes
+              19 Dir(s)  20,640,583,680 bytes free
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20>pip3 install -e ./ml-agents-envs
+Obtaining file:///C:/Users/markk/Documents/ml-agents-release_20/ml-agents-release_20/ml-agents-envs
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Collecting cloudpickle (from mlagents-envs==0.30.0)
+  Using cached cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Collecting grpcio>=1.11.0 (from mlagents-envs==0.30.0)
+  Obtaining dependency information for grpcio>=1.11.0 from https://files.pythonhosted.org/packages/dd/c5/22351665cd11c84dc404386ed18177702891d311d8e6421ab8a2665c4a58/grpcio-1.58.0-cp310-cp310-win_amd64.whl.metadata
+  Downloading grpcio-1.58.0-cp310-cp310-win_amd64.whl.metadata (4.1 kB)
+Requirement already satisfied: numpy<1.24,>=1.14.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0) (1.23.5)
+Collecting Pillow>=4.2.1 (from mlagents-envs==0.30.0)
+  Obtaining dependency information for Pillow>=4.2.1 from https://files.pythonhosted.org/packages/d0/4f/faebe1180e5e6ad6330c539dda7f6081182157393ba6816a438f759a0e59/Pillow-10.0.0-cp310-cp310-win_amd64.whl.metadata
+  Downloading Pillow-10.0.0-cp310-cp310-win_amd64.whl.metadata (9.6 kB)
+Requirement already satisfied: protobuf>=3.6 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0) (3.20.3)
+Collecting pyyaml>=3.1.0 (from mlagents-envs==0.30.0)
+  Obtaining dependency information for pyyaml>=3.1.0 from https://files.pythonhosted.org/packages/24/97/9b59b43431f98d01806b288532da38099cc6f2fea0f3d712e21e269c0279/PyYAML-6.0.1-cp310-cp310-win_amd64.whl.metadata
+  Downloading PyYAML-6.0.1-cp310-cp310-win_amd64.whl.metadata (2.1 kB)
+Collecting gym>=0.21.0 (from mlagents-envs==0.30.0)
+  Downloading gym-0.26.2.tar.gz (721 kB)
+     ---------------------------------------- 721.7/721.7 kB 5.0 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting pettingzoo==1.15.0 (from mlagents-envs==0.30.0)
+  Downloading PettingZoo-1.15.0.tar.gz (756 kB)
+     ---------------------------------------- 756.7/756.7 kB 15.9 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: filelock>=3.4.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0) (3.12.3)
+Requirement already satisfied: typing-extensions>=4.7.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from filelock>=3.4.0->mlagents-envs==0.30.0) (4.7.1)
+Collecting gym-notices>=0.0.4 (from gym>=0.21.0->mlagents-envs==0.30.0)
+  Downloading gym_notices-0.0.8-py3-none-any.whl (3.0 kB)
+Downloading grpcio-1.58.0-cp310-cp310-win_amd64.whl (4.3 MB)
+   ---------------------------------------- 4.3/4.3 MB 22.7 MB/s eta 0:00:00
+Downloading Pillow-10.0.0-cp310-cp310-win_amd64.whl (2.5 MB)
+   ---------------------------------------- 2.5/2.5 MB 26.6 MB/s eta 0:00:00
+Downloading PyYAML-6.0.1-cp310-cp310-win_amd64.whl (145 kB)
+   ---------------------------------------- 145.3/145.3 kB 9.0 MB/s eta 0:00:00
+Building wheels for collected packages: mlagents-envs, pettingzoo, gym
+  Building editable for mlagents-envs (pyproject.toml) ... done
+  Created wheel for mlagents-envs: filename=mlagents_envs-0.30.0-0.editable-py3-none-any.whl size=2971 sha256=743b9fd3f66cd47f052ddc6ac18c3503d2f62794e97cdb3899ebdc11e75f870a
+  Stored in directory: C:\Users\markk\AppData\Local\Temp\pip-ephem-wheel-cache-krjjtj4i\wheels\db\9a\7f\b7e830d0fa97db99e0e069dc41bc48ff732bc9a57483b001ad
+  Building wheel for pettingzoo (pyproject.toml) ... done
+  Created wheel for pettingzoo: filename=PettingZoo-1.15.0-py3-none-any.whl size=875645 sha256=b5dccd12472fb0a59609b97375e0d22db0b8be82360a3c31cb500bc1cb01d404
+  Stored in directory: c:\users\markk\appdata\local\pip\cache\wheels\e3\35\ac\76984cb1c12902d190c818d57c43d25c3f9281591a640ccd13
+  Building wheel for gym (pyproject.toml) ... done
+  Created wheel for gym: filename=gym-0.26.2-py3-none-any.whl size=827636 sha256=d14b9884e8ca1c3d62e550d0041e3d8b9828b0999d0269bacf8f30c91a8af316
+  Stored in directory: c:\users\markk\appdata\local\pip\cache\wheels\b9\22\6d\3e7b32d98451b4cd9d12417052affbeeeea012955d437da1da
+Successfully built mlagents-envs pettingzoo gym
+Installing collected packages: gym-notices, pyyaml, Pillow, grpcio, cloudpickle, gym, pettingzoo, mlagents-envs
+Successfully installed Pillow-10.0.0 cloudpickle-2.2.1 grpcio-1.58.0 gym-0.26.2 gym-notices-0.0.8 mlagents-envs-0.30.0 pettingzoo-1.15.0 pyyaml-6.0.1
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20>pip3 install -e ./ml-agents
+Obtaining file:///C:/Users/markk/Documents/ml-agents-release_20/ml-agents-release_20/ml-agents
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Requirement already satisfied: grpcio>=1.11.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (1.58.0)
+Collecting h5py>=2.9.0 (from mlagents==0.30.0)
+  Obtaining dependency information for h5py>=2.9.0 from https://files.pythonhosted.org/packages/e2/c4/6f8dae1530d57a6122fd5b72c750187484acbe612f630cb2179e4bcb12c1/h5py-3.9.0-cp310-cp310-win_amd64.whl.metadata
+  Downloading h5py-3.9.0-cp310-cp310-win_amd64.whl.metadata (2.5 kB)
+Requirement already satisfied: mlagents-envs==0.30.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (0.30.0)
+Requirement already satisfied: numpy<2.0,>=1.13.3 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (1.23.5)
+Requirement already satisfied: Pillow>=4.2.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (10.0.0)
+Requirement already satisfied: protobuf>=3.6 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (3.20.3)
+Requirement already satisfied: pyyaml>=3.1.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents==0.30.0) (6.0.1)
+Collecting tensorboard>=1.15 (from mlagents==0.30.0)
+  Obtaining dependency information for tensorboard>=1.15 from https://files.pythonhosted.org/packages/bc/a2/ff5f4c299eb37c95299a76015da3f30211468e29d8d6f1d011683279baee/tensorboard-2.14.0-py3-none-any.whl.metadata
+  Using cached tensorboard-2.14.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting attrs>=19.3.0 (from mlagents==0.30.0)
+  Using cached attrs-23.1.0-py3-none-any.whl (61 kB)
+Collecting pypiwin32==223 (from mlagents==0.30.0)
+  Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
+Collecting cattrs<1.7,>=1.1.0 (from mlagents==0.30.0)
+  Using cached cattrs-1.5.0-py3-none-any.whl (19 kB)
+Requirement already satisfied: cloudpickle in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0->mlagents==0.30.0) (2.2.1)
+Requirement already satisfied: gym>=0.21.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0->mlagents==0.30.0) (0.26.2)
+Requirement already satisfied: pettingzoo==1.15.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0->mlagents==0.30.0) (1.15.0)
+Requirement already satisfied: filelock>=3.4.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from mlagents-envs==0.30.0->mlagents==0.30.0) (3.12.3)
+Collecting pywin32>=223 (from pypiwin32==223->mlagents==0.30.0)
+  Downloading pywin32-306-cp310-cp310-win_amd64.whl (9.2 MB)
+     ---------------------------------------- 9.2/9.2 MB 18.4 MB/s eta 0:00:00
+Collecting absl-py>=0.4 (from tensorboard>=1.15->mlagents==0.30.0)
+  Using cached absl_py-1.4.0-py3-none-any.whl (126 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for google-auth<3,>=1.6.3 from https://files.pythonhosted.org/packages/9c/8d/bff87fc722553a5691d8514da5523c23547f3894189ba03b57592e37bdc2/google_auth-2.22.0-py2.py3-none-any.whl.metadata
+  Using cached google_auth-2.22.0-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting google-auth-oauthlib<1.1,>=0.5 (from tensorboard>=1.15->mlagents==0.30.0)
+  Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+Collecting markdown>=2.6.8 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for markdown>=2.6.8 from https://files.pythonhosted.org/packages/1a/b5/228c1cdcfe138f1a8e01ab1b54284c8b83735476cb22b6ba251656ed13ad/Markdown-3.4.4-py3-none-any.whl.metadata
+  Using cached Markdown-3.4.4-py3-none-any.whl.metadata (6.9 kB)
+Collecting requests<3,>=2.21.0 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for requests<3,>=2.21.0 from https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl.metadata
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: setuptools>=41.0.0 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from tensorboard>=1.15->mlagents==0.30.0) (63.2.0)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for tensorboard-data-server<0.8.0,>=0.7.0 from https://files.pythonhosted.org/packages/da/61/6e9ff8258422d287eec718872fb71e05324356722ab658c8afda25f51539/tensorboard_data_server-0.7.1-py3-none-any.whl.metadata
+  Using cached tensorboard_data_server-0.7.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for werkzeug>=1.0.1 from https://files.pythonhosted.org/packages/9b/59/a7c32e3d8d0e546a206e0552a2c04444544f15c1da4a01df8938d20c6ffc/werkzeug-2.3.7-py3-none-any.whl.metadata
+  Using cached werkzeug-2.3.7-py3-none-any.whl.metadata (4.1 kB)
+Collecting wheel>=0.26 (from tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for wheel>=0.26 from https://files.pythonhosted.org/packages/b8/8b/31273bf66016be6ad22bb7345c37ff350276cfd46e389a0c2ac5da9d9073/wheel-0.41.2-py3-none-any.whl.metadata
+  Using cached wheel-0.41.2-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: typing-extensions>=4.7.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from filelock>=3.4.0->mlagents-envs==0.30.0->mlagents==0.30.0) (4.7.1)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for cachetools<6.0,>=2.0.0 from https://files.pythonhosted.org/packages/a9/c9/c8a7710f2cedcb1db9224fdd4d8307c9e48cbddc46c18b515fefc0f1abbe/cachetools-5.3.1-py3-none-any.whl.metadata
+  Using cached cachetools-5.3.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached rsa-4.9-py3-none-any.whl (34 kB)
+Collecting six>=1.9.0 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting urllib3<2.0 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for urllib3<2.0 from https://files.pythonhosted.org/packages/c5/05/c214b32d21c0b465506f95c4f28ccbcba15022e000b043b72b3df7728471/urllib3-1.26.16-py2.py3-none-any.whl.metadata
+  Using cached urllib3-1.26.16-py2.py3-none-any.whl.metadata (48 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: gym-notices>=0.0.4 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from gym>=0.21.0->mlagents-envs==0.30.0->mlagents==0.30.0) (0.0.8)
+Collecting charset-normalizer<4,>=2 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for charset-normalizer<4,>=2 from https://files.pythonhosted.org/packages/5c/f2/f3faa20684729d3910af2ee142e30432c7a46a817eadeeab87366ed87bbb/charset_normalizer-3.2.0-cp310-cp310-win_amd64.whl.metadata
+  Downloading charset_normalizer-3.2.0-cp310-cp310-win_amd64.whl.metadata (31 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents==0.30.0)
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl.metadata
+  Using cached certifi-2023.7.22-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\markk\documents\unityprojects\reinforcement-learning\sample-env\lib\site-packages (from werkzeug>=1.0.1->tensorboard>=1.15->mlagents==0.30.0) (2.1.3)
+Collecting pyasn1<0.6.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached pyasn1-0.5.0-py2.py3-none-any.whl (83 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15->mlagents==0.30.0)
+  Using cached oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Downloading h5py-3.9.0-cp310-cp310-win_amd64.whl (2.7 MB)
+   ---------------------------------------- 2.7/2.7 MB 24.4 MB/s eta 0:00:00
+Using cached tensorboard-2.14.0-py3-none-any.whl (5.5 MB)
+Using cached google_auth-2.22.0-py2.py3-none-any.whl (181 kB)
+Using cached Markdown-3.4.4-py3-none-any.whl (94 kB)
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached tensorboard_data_server-0.7.1-py3-none-any.whl (2.4 kB)
+Using cached werkzeug-2.3.7-py3-none-any.whl (242 kB)
+Using cached wheel-0.41.2-py3-none-any.whl (64 kB)
+Using cached cachetools-5.3.1-py3-none-any.whl (9.3 kB)
+Using cached certifi-2023.7.22-py3-none-any.whl (158 kB)
+Downloading charset_normalizer-3.2.0-cp310-cp310-win_amd64.whl (96 kB)
+   ---------------------------------------- 96.9/96.9 kB ? eta 0:00:00
+Using cached urllib3-1.26.16-py2.py3-none-any.whl (143 kB)
+Building wheels for collected packages: mlagents
+  Building editable for mlagents (pyproject.toml) ... done
+  Created wheel for mlagents: filename=mlagents-0.30.0-0.editable-py3-none-any.whl size=3822 sha256=7913362f2aaff6574141f219a092f9617f51ea77b94106fdb34759e58a9d1b3e
+  Stored in directory: C:\Users\markk\AppData\Local\Temp\pip-ephem-wheel-cache-fa3mdaxu\wheels\0e\d8\3b\c353e0b79302849dc27edf02ca840d02e1228b496aa14903d2
+Successfully built mlagents
+Installing collected packages: pywin32, wheel, werkzeug, urllib3, tensorboard-data-server, six, pypiwin32, pyasn1, oauthlib, markdown, idna, h5py, charset-normalizer, certifi, cachetools, attrs, absl-py, rsa, requests, pyasn1-modules, cattrs, requests-oauthlib, google-auth, google-auth-oauthlib, tensorboard, mlagents
+Successfully installed absl-py-1.4.0 attrs-23.1.0 cachetools-5.3.1 cattrs-1.5.0 certifi-2023.7.22 charset-normalizer-3.2.0 google-auth-2.22.0 google-auth-oauthlib-1.0.0 h5py-3.9.0 idna-3.4 markdown-3.4.4 mlagents-0.30.0 oauthlib-3.2.2 pyasn1-0.5.0 pyasn1-modules-0.3.0 pypiwin32-223 pywin32-306 requests-2.31.0 requests-oauthlib-1.3.1 rsa-4.9 six-1.16.0 tensorboard-2.14.0 tensorboard-data-server-0.7.1 urllib3-1.26.16 werkzeug-2.3.7 wheel-0.41.2
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20>mlagents-learn
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20>cd ..
+
+(sample-env) C:\Users\markk\Documents\ml-agents-release_20>cd ..
+
+(sample-env) C:\Users\markk\Documents>cd UnityProjects
+
+(sample-env) C:\Users\markk\Documents\UnityProjects>cd Reinforcement-Learning
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>dir
+ Volume in drive C is OS
+ Volume Serial Number is 7E5B-33F2
+
+ Directory of C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning
+
+2023-09-09  07:01 PM    <DIR>          .
+2023-09-09  07:01 PM    <DIR>          ..
+2023-09-08  07:41 PM                99 .vsconfig
+2023-09-09  09:14 PM            64,347 Assembly-CSharp-firstpass.csproj
+2023-09-09  09:14 PM            68,207 Assembly-CSharp.csproj
+2023-09-09  09:22 PM    <DIR>          Assets
+2023-09-09  09:21 PM    <DIR>          Library
+2023-09-09  09:11 PM    <DIR>          Logs
+2023-09-08  08:22 PM    <DIR>          obj
+2023-09-09  07:02 PM    <DIR>          Packages
+2023-09-09  09:22 PM    <DIR>          ProjectSettings
+2023-09-09  05:19 PM             1,420 Reinforcement-Learning.sln
+2023-09-09  01:16 AM             1,420 ReinforcementLearning.sln
+2023-09-09  06:55 PM    <DIR>          sample-env
+2023-09-09  09:22 PM    <DIR>          Temp
+2023-09-09  04:11 PM               739 to-uninstall.txt
+2023-09-08  09:43 PM    <DIR>          UserSettings
+               6 File(s)        136,232 bytes
+              11 Dir(s)  20,850,479,104 bytes free
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\ppo\Live\Live-1216.onnx
+[INFO] Copied results\ppo\Live\Live-1216.onnx to results\ppo\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+Traceback (most recent call last):
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\mlagents-learn.exe\__main__.py", line 7, in <module>
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 264, in main
+    run_cli(parse_command_line())
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 260, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 75, in run_training
+    validate_existing_directories(
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\directory_utils.py", line 25, in validate_existing_directories
+    raise UnityTrainerException(
+mlagents.trainers.exception.UnityTrainerException: Previous data from this run ID was found. Either specify a new run ID, use --resume to resume this run, or use the --force parameter to overwrite existing data.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn --run id=Test2
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test2\Live\Live-3356.onnx
+[INFO] Copied results\id=Test2\Live\Live-3356.onnx to results\id=Test2\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn --run id=Test3
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test3\Live\Live-10452.onnx
+[INFO] Copied results\id=Test3\Live\Live-10452.onnx to results\id=Test3\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn --run id=Test4
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test4\Live\Live-3681.onnx
+[INFO] Copied results\id=Test4\Live\Live-3681.onnx to results\id=Test4\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn --run id=Test5
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test5\Live\Live-974.onnx
+[INFO] Copied results\id=Test5\Live\Live-974.onnx to results\id=Test5\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn --run id=Test6
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Live?team=0
+[WARNING] Behavior name Live does not match any behaviors specified in the trainer configuration file. A default configuration will be used.
+[INFO] Hyperparameters for behavior name Live:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   64
+        summary_freq:   50000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Live. Step: 50000. Time Elapsed: 97.892 s. Mean Reward: -1.328. Std of Reward: 1.705. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test6\Live\Live-75008.onnx
+[INFO] Copied results\id=Test6\Live\Live-75008.onnx to results\id=Test6\Live.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test7
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  256
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.9
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   3
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 42.527 s. Mean Reward: 105.917. Std of Reward: 24.174. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test7\Score\Score-2488.onnx
+[INFO] Copied results\id=Test7\Score\Score-2488.onnx to results\id=Test7\Score.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test8
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  256
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.9
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   3
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 40.868 s. Mean Reward: 140.425. Std of Reward: 150.575. Training.
+[INFO] Score. Step: 4000. Time Elapsed: 54.236 s. Mean Reward: 139.175. Std of Reward: 100.975. Training.
+[INFO] Score. Step: 6000. Time Elapsed: 67.749 s. Mean Reward: 256.667. Std of Reward: 103.246. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test8\Score\Score-7776.onnx
+[INFO] Copied results\id=Test8\Score\Score-7776.onnx to results\id=Test8\Score.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test9
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  256
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.9
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   3
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 78.012 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 4000. Time Elapsed: 114.612 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 6000. Time Elapsed: 118.560 s. Mean Reward: 48.080. Std of Reward: 50.118. Training.
+[INFO] Score. Step: 8000. Time Elapsed: 122.654 s. Mean Reward: 72.133. Std of Reward: 63.744. Training.
+[INFO] Score. Step: 10000. Time Elapsed: 126.653 s. Mean Reward: 22.017. Std of Reward: 48.781. Training.
+[INFO] Score. Step: 12000. Time Elapsed: 130.736 s. Mean Reward: 39.233. Std of Reward: 71.430. Training.
+[INFO] Score. Step: 14000. Time Elapsed: 134.728 s. Mean Reward: 2.483. Std of Reward: 23.134. Training.
+[INFO] Score. Step: 16000. Time Elapsed: 138.593 s. Mean Reward: 5.467. Std of Reward: 25.269. Training.
+[INFO] Score. Step: 18000. Time Elapsed: 142.601 s. Mean Reward: 37.380. Std of Reward: 78.588. Training.
+[INFO] Score. Step: 20000. Time Elapsed: 146.441 s. Mean Reward: 70.283. Std of Reward: 85.411. Training.
+[INFO] Score. Step: 22000. Time Elapsed: 150.537 s. Mean Reward: 26.350. Std of Reward: 43.930. Training.
+[INFO] Score. Step: 24000. Time Elapsed: 154.540 s. Mean Reward: 12.325. Std of Reward: 23.425. Training.
+[INFO] Score. Step: 26000. Time Elapsed: 158.417 s. Mean Reward: 13.050. Std of Reward: 25.350. Training.
+[INFO] Score. Step: 28000. Time Elapsed: 167.368 s. Mean Reward: -11.550. Std of Reward: 0.800. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test9\Score\Score-28312.onnx
+[INFO] Copied results\id=Test9\Score\Score-28312.onnx to results\id=Test9\Score.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test10
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  256
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.9
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   3
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 31.578 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 4000. Time Elapsed: 35.105 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 6000. Time Elapsed: 38.590 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 8000. Time Elapsed: 42.181 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 10000. Time Elapsed: 45.588 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 12000. Time Elapsed: 49.207 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 14000. Time Elapsed: 52.815 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 16000. Time Elapsed: 56.349 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 18000. Time Elapsed: 59.985 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 20000. Time Elapsed: 63.551 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 22000. Time Elapsed: 67.235 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 24000. Time Elapsed: 70.789 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 26000. Time Elapsed: 74.493 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 28000. Time Elapsed: 78.623 s. No episode was completed since last summary. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test10\Score\Score-28872.onnx
+[INFO] Copied results\id=Test10\Score\Score-28872.onnx to results\id=Test10\Score.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --initialize-from=Test10 --run id=Test11
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+Traceback (most recent call last):
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\mlagents-learn.exe\__main__.py", line 7, in <module>
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 264, in main
+    run_cli(parse_command_line())
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 260, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 75, in run_training
+    validate_existing_directories(
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\directory_utils.py", line 40, in validate_existing_directories
+    raise UnityTrainerException(
+mlagents.trainers.exception.UnityTrainerException: Could not initialize from results\Test10. Make sure models have already been saved with that run ID.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --initialize-from=Test9 --run id=Test10
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+Traceback (most recent call last):
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\mlagents-learn.exe\__main__.py", line 7, in <module>
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 264, in main
+    run_cli(parse_command_line())
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 260, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 75, in run_training
+    validate_existing_directories(
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\directory_utils.py", line 25, in validate_existing_directories
+    raise UnityTrainerException(
+mlagents.trainers.exception.UnityTrainerException: Previous data from this run ID was found. Either specify a new run ID, use --resume to resume this run, or use the --force parameter to overwrite existing data.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test10
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+Traceback (most recent call last):
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\mlagents-learn.exe\__main__.py", line 7, in <module>
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 264, in main
+    run_cli(parse_command_line())
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 260, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 75, in run_training
+    validate_existing_directories(
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\directory_utils.py", line 25, in validate_existing_directories
+    raise UnityTrainerException(
+mlagents.trainers.exception.UnityTrainerException: Previous data from this run ID was found. Either specify a new run ID, use --resume to resume this run, or use the --force parameter to overwrite existing data.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test11
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  256
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.9
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   3
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 43.202 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 4000. Time Elapsed: 46.997 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 6000. Time Elapsed: 50.763 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 8000. Time Elapsed: 54.671 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 10000. Time Elapsed: 58.280 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 12000. Time Elapsed: 62.032 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 14000. Time Elapsed: 66.366 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 16000. Time Elapsed: 70.133 s. No episode was completed since last summary. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[ERROR] Worker 0 exceeded the allowed number of restarts.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test11\Score\Score-17352.onnx
+[INFO] Copied results\id=Test11\Score\Score-17352.onnx to results\id=Test11\Score.onnx.
+Traceback (most recent call last):
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning\sample-env\Scripts\mlagents-learn.exe\__main__.py", line 7, in <module>
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 264, in main
+    run_cli(parse_command_line())
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 260, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\learn.py", line 138, in run_training
+    env_manager.close()
+  File "C:\Users\markk\Documents\ml-agents-release_20\ml-agents-release_20\ml-agents\mlagents\trainers\subprocess_env_manager.py", line 489, in close
+    step: EnvironmentResponse = self.step_queue.get_nowait()
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\multiprocessing\queues.py", line 135, in get_nowait
+    return self.get(False)
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\multiprocessing\queues.py", line 115, in get
+    elif not self._poll():
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\multiprocessing\connection.py", line 262, in poll
+    return self._poll(timeout)
+  File "C:\Users\markk\AppData\Local\Programs\Python\Python310\lib\multiprocessing\connection.py", line 333, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+KeyboardInterrupt
+^C
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test12
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.0.0+cu118
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: Score?team=0
+[INFO] Hyperparameters for behavior name Score:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   32
+          buffer_size:  2048
+          learning_rate:        0.0003
+          beta: 0.005
+          epsilon:      0.2
+          lambd:        0.95
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    False
+          hidden_units: 20
+          num_layers:   1
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.925
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   16
+        summary_freq:   2000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] Score. Step: 2000. Time Elapsed: 13.242 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 4000. Time Elapsed: 16.393 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 6000. Time Elapsed: 19.321 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 8000. Time Elapsed: 22.424 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 10000. Time Elapsed: 25.495 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 12000. Time Elapsed: 28.487 s. No episode was completed since last summary. Training.
+[INFO] Score. Step: 14000. Time Elapsed: 31.570 s. Mean Reward: 12.875. Std of Reward: 0.000. Training.
+[INFO] Score. Step: 16000. Time Elapsed: 34.699 s. Mean Reward: 14.050. Std of Reward: 0.000. Training.
+[INFO] Score. Step: 18000. Time Elapsed: 37.714 s. Mean Reward: 14.210. Std of Reward: 0.000. Training.
+[INFO] Score. Step: 20000. Time Elapsed: 40.796 s. Mean Reward: 14.680. Std of Reward: 0.000. Training.
+[INFO] Score. Step: 22000. Time Elapsed: 43.834 s. Mean Reward: 15.672. Std of Reward: 0.088. Training.
+[INFO] Score. Step: 24000. Time Elapsed: 46.972 s. Mean Reward: 12.320. Std of Reward: 0.000. Training.
+[WARNING] Restarting worker[0] after 'Communicator has exited.'
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+============= Diagnostic Run torch.onnx.export version 2.0.0+cu118 =============
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+[INFO] Exported results\id=Test12\Score\Score-25740.onnx
+[INFO] Copied results\id=Test12\Score\Score-25740.onnx to results\id=Test12\Score.onnx.
+
+(sample-env) C:\Users\markk\Documents\UnityProjects\Reinforcement-Learning>mlagents-learn config/Score.yaml --run id=Test12
+
+// in a seperate cmd line to open tensorboard
+tensorboard --logdir results 
