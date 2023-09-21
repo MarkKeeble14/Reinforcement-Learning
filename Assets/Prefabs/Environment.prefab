@@ -1279,8 +1279,8 @@ MonoBehaviour:
   environmentManager: {fileID: 4918950539414387758}
   coin: {fileID: 6217731214361743219}
   agent: {fileID: 4918950540363645279}
-  mlMovedCloserReward: 0.15
-  mlMovedFurtherReward: -0.05
+  mlMovedCloserReward: 0.25
+  mlMovedFurtherReward: -0.1
 --- !u!1 &7586016661852689294
 GameObject:
   m_ObjectHideFlags: 0

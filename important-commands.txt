@@ -1,0 +1,5 @@
+.\sample-env\Scripts\Activate
+
+mlagents-learn config/Score.yaml --run Test31
+
+tensorboard --logdir results 
